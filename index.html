@@ -112,14 +112,13 @@
         <!-- /sidebar -->
 
         <main class="content bg_fra_back overflow-auto">
-            <div class="jumbo container-fluid bg_fra_primary  text-white p-3">
+            <div class="jumbo container-fluid bg_fra_primary text-white p-3">
                 <div class="row">
 
                     <div class="col-12 col-md-4 col-lg-3 order-md-3">
                         <span class="me-2">Nuovo studente</span>
                         <button class="btn btn-primary border-white bg_fra_primary fs-5 py-0" type="button"
-                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                            aria-controls="offcanvasRight">
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             +
                         </button>
                         <!-- /button -->
@@ -128,11 +127,73 @@
                             aria-labelledby="offcanvasRightLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                </button>
                             </div>
                             <div class="offcanvas-body">
-                                ...
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="inputText4" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="inputText4">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputText4" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" id="inputText4">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">Email</label>
+                                        <div class="input-group flex-nowrap">
+                                            <span class="input-group-text" id="addon-wrapping">@</span>
+                                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="inputAddress" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="inputAddress">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputCity" class="form-label">Città</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="inputState" class="form-label">Stato</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Scegli...</option>
+                                            <option>Cina</option>
+                                            <option>Francia</option>
+                                            <option>Germania</option>
+                                            <option>Giappone</option>
+                                            <option>Inghilterra</option>
+                                            <option>Italia</option>
+                                            <option>Spagna</option>
+                                            <option>Stati Uniti</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="inputZip" class="form-label text-uppercase">cap</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="formFile" class="form-label">Default file input example</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                      </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                                Seleziona per proseguire
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn bg_fra_primary text-white">Salva</button>
+                                        <button type="reset" class="btn bg_fra_bell text-white">Svuota</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                         <!-- /canvas menu -->
@@ -149,9 +210,12 @@
                             <span class="badge rounded-pill fw-light bg_fra_badge">3 App</span>
                             <span>&raquo;</span>
                             <span class="badge rounded-pill fw-light bg_fra_badge d-lg-none">+</span>
-                            <span class="badge rounded-pill fw-light bg_fra_badge d-none d-lg-inline-block">Boolean mobile app</span>
-                            <span class="badge rounded-pill fw-light bg_fra_badge d-none d-lg-inline-block">Boolean we app</span>
-                            <span class="badge rounded-pill fw-light bg_fra_badge d-none d-lg-inline-block">Boolean blog app</span>
+                            <span class="badge rounded-pill fw-light bg_fra_badge d-none d-lg-inline-block">Boolean
+                                mobile app</span>
+                            <span class="badge rounded-pill fw-light bg_fra_badge d-none d-lg-inline-block">Boolean we
+                                app</span>
+                            <span class="badge rounded-pill fw-light bg_fra_badge d-none d-lg-inline-block">Boolean blog
+                                app</span>
                         </div>
                     </div>
                     <!-- /piano student -->
