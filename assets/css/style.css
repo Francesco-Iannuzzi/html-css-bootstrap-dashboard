@@ -14,6 +14,7 @@
 {
     --fra-primary: #1b72e8;
     --fra-back: #f8f9fa;
+    --fra-search: #e5e5e5;
     --fra-side: #071f36;
     --fra-cardt: #f7f7f7;
     --fra-cardb: #ffffff;
@@ -29,6 +30,11 @@
 .bg_fra_back
 {
     background-color: var(--fra-back);
+}
+
+.bg_fra_search
+{
+    background-color: var(--fra-search);
 }
 
 .bg_fra_side
@@ -56,14 +62,49 @@
     background-color: var(--fra-bell);
 }
 
+.tx_fra_primary
+{
+    color: var(--fra-primary);
+}
+
+.tx_fra_back
+{
+    color: var(--fra-back);
+}
+
+.tx_fra_searcj
+{
+    color: var(--fra-search);
+}
+
+.tx_fra_side
+{
+    color: var(--fra-side);
+}
+
+.tx_fra_cardt
+{
+    color: var(--fra-cardt);
+}
+
+.tx_fra_cardb
+{
+    color: var(--fra-cardb);
+}
+
+.tx_fra_icon
+{
+    color: var(--fra-icon);
+}
+
+.tx_fra_bell
+{
+    color: var(--fra-bell);
+}
+
 /* #endregion utilities */
 
 /* #region debug */
-
-.debug #app_header
-{
-    background-color: blue;
-}
 
 
 /* #endregion debug */
