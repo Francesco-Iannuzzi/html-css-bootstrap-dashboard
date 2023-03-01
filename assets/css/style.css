@@ -1,13 +1,129 @@
+/* #region commons */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #endregion commons */
+
 /* #region utilities */
 
 :root
 {
     --fra-primary: #1b72e8;
     --fra-back: #f8f9fa;
+    --fra-side: #071f36;
     --fra-cardt: #f7f7f7;
     --fra-cardb: #ffffff;
     --fra-icon: #5b5858;
     --fra-bell: #ff8f00;
 }
 
+.bg_fra_primary
+{
+    background-color: var(--fra-primary);
+}
+
+.bg_fra_back
+{
+    background-color: var(--fra-back);
+}
+
+.bg_fra_side
+{
+    background-color: var(--fra-side);
+}
+
+.bg_fra_cardt
+{
+    background-color: var(--fra-cardt);
+}
+
+.bg_fra_cardb
+{
+    background-color: var(--fra-cardb);
+}
+
+.bg_fra_icon
+{
+    background-color: var(--fra-icon);
+}
+
+.bg_fra_bell
+{
+    background-color: var(--fra-bell);
+}
+
 /* #endregion utilities */
+
+/* #region debug */
+
+.debug #app_header
+{
+    background-color: blue;
+}
+
+/* #endregion debug */
+
+
+/* #region app_header */
+
+#app_header
+{
+    height: 70px;
+    width: 100%;
+}
+
+/* #endregion app_header */
+
+
+/* #region wrapper */
+
+.wrapper
+{
+    height: calc(100vh - 70px);
+}
+
+/* #region sidebar */
+
+.sidebar
+{
+    background-image: url("../img/sidebar-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 100%;
+}
+
+/* #endregion sidebar */
+
+/* #region content */
+
+.content
+{
+    width: calc(100% - 80px);
+    height: 100%;
+}
+
+/* #region content */
+
+/* #endregion wrapper */
+
+/* #region media */
+
+@media screen and (min-width:  992px)
+{
+    .sidebar
+    {
+        width: 180px;
+    }
+
+    .content
+    {
+        width: calc(100% - 180px);    
+    }
+}
+
+/* #region media */
