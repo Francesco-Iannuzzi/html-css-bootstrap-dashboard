@@ -108,11 +108,21 @@
     color: var(--fra-bell);
 }
 
+.va_m
+{
+    vertical-align: middle;
+}
+
 /* #endregion utilities */
 
 /* #region debug */
 
-
+.data [class^=col-]
+{
+    height: 1000px;
+    border: 1px dashed red;
+    background-color: yellow;
+}
 /* #endregion debug */
 
 
