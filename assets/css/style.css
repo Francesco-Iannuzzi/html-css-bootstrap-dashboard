@@ -1,10 +1,10 @@
 /* #region commons */
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 /* #endregion commons */
 
@@ -20,6 +20,7 @@
     --fra-cardb: #ffffff;
     --fra-icon: #5b5858;
     --fra-bell: #ff8f00;
+    --fra-badge: #165bba;
 }
 
 .bg_fra_primary
@@ -60,6 +61,11 @@
 .bg_fra_bell
 {
     background-color: var(--fra-bell);
+}
+
+.bg_fra_badge
+{
+    background-color: var(--fra-badge);
 }
 
 .tx_fra_primary
