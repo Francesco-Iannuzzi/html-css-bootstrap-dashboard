@@ -110,7 +110,7 @@
 
 .big_cell
 {
-    width: 30%;
+    width: calc(100% / 3);
 }
 
 .fs_fra_1
@@ -189,7 +189,7 @@
 {
     .big_cell
     {
-        width: 50%;
+        width: 40%;
     }
 }
 
