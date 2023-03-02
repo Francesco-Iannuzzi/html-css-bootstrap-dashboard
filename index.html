@@ -24,17 +24,22 @@
                     <img src="./assets/img/mobile-logo.png" class="d-lg-none" width="30px" alt="">
                 </a>
                 <a class="navbar-brand">
-                    <img src="./assets/img/logo.svg" class="d-none d-lg-block" alt="">
+                    <img src="./assets/img/logo.svg" class="img -fluid d-none d-lg-block" alt="">
                 </a>
                 <!-- /logo -->
 
                 <form class="d-flex flex-grow-1" role="search">
-                    <input class="form-control me-2 bg_fra_search" type="search" placeholder=" Search"
-                        aria-label="Search">
+                    <div class="input-group mx-4">
+                        <div class="input-group-text border-end-0">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <input class="form-control me-2 bg_fra_search" type="search"
+                            placeholder="Prova a cercare lezioni di laravel" aria-label="Search">
+                    </div>
                 </form>
                 <!-- /search navbar -->
 
-                <div class="icon_nav d-flex gap-2">
+                <div class="icon_nav d-flex gap-3">
                     <a href="#" class="text-decoration-none tx_fra_icon">
                         <i class="fa-solid fa-bars d-none d-lg-block"></i>
                     </a>
@@ -115,7 +120,7 @@
             <div class="jumbo container-fluid bg_fra_primary text-white p-3">
                 <div class="row">
 
-                    <div class="col-12 col-md-4 col-lg-3 order-md-3">
+                    <div class="col-12 col-md-4 col-lg-3 order-md-3 mb-3">
                         <span class="me-2">Nuovo studente</span>
                         <button class="btn btn-primary border-white bg_fra_primary fs-5 py-0" type="button"
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
@@ -144,7 +149,8 @@
                                         <label for="inputEmail4" class="form-label">Email</label>
                                         <div class="input-group flex-nowrap">
                                             <span class="input-group-text" id="addon-wrapping">@</span>
-                                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                                            <input type="text" class="form-control" placeholder="Username"
+                                                aria-label="Username" aria-describedby="addon-wrapping">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -180,7 +186,7 @@
                                     <div class="col-12 mb-3">
                                         <label for="formFile" class="form-label">Default file input example</label>
                                         <input class="form-control" type="file" id="formFile">
-                                      </div>
+                                    </div>
                                     <div class="col-12">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -201,7 +207,7 @@
                     </div>
                     <!-- /new student -->
 
-                    <div class="col-12 col-md-4 col-lg-6 order-md-1">
+                    <div class="col-12 col-md-4 col-lg-6 order-md-1 mb-3">
                         <div>
                             <h1 class="d-inline-block">Boolean</h1>
                             <span class="badge rounded-pill fw-light bg_fra_badge">Piano blaze</span>
@@ -220,7 +226,7 @@
                     </div>
                     <!-- /piano student -->
 
-                    <div class="col-12 col-md-4 col-lg-3 order-md-2">
+                    <div class="col-12 col-md-4 col-lg-3 order-md-2 mb-3">
                         <p>Studenti online negli ultimi 30 min</p>
                         <h2>125</h2>
                     </div>
@@ -228,179 +234,268 @@
                 </div>
             </div>
             <!-- /Jumbo -->
-            
+
             <div class="data container-fluid">
                 <div class="row">
 
                     <div class="col-12 col-lg-8 py-5">
-                        <div class="card">
+
+                        <div class="card mb-4">
                             <div class="card-header">
-                              <h2>Prossime classi</h2>
+                                <h2>Prossime classi</h2>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body fs_fra_1">
 
                                 <table class="table table-hover">
 
                                     <thead>
-                                      <tr>
-                                        <th scope="col">Nome</th>
-                                        <th scope="col" class="text-center d-none d-md-table-cell">Data inizio</th>
-                                        <th scope="col" class="text-center d-none d-md-table-cell">ROI</th>
-                                        <th scope="col" class="text-center">Stato</th>
-                                        <th scope="col" class="text-center">Azioni</th>
-                                      </tr>
+                                        <tr>
+                                            <th scope="col" class="big_cell">Nome</th>
+                                            <th scope="col" class="text-center d-none d-md-table-cell">Data inizio</th>
+                                            <th scope="col" class="text-center d-none d-md-table-cell">ROI</th>
+                                            <th scope="col" class="text-center">Stato</th>
+                                            <th scope="col" class="text-center">Azioni</th>
+                                        </tr>
                                     </thead>
                                     <!-- titles table -->
 
                                     <tbody>
-                                      <tr class="lh-lg text-center">
-                                        <td class="text-start">
-                                            <img src="./assets/img/class-avatar.jpg" width="30px" alt="" class="me-2">
-                                            <span class="me-5 va_m">Classe 75</span>
-                                        </td>
-                                        <td class=" d-none d-md-table-cell va_m">15 Feb 2021</td>
-                                        <td class=" d-none d-md-table-cell va_m">20%</td>
-                                        <td>
-                                            <span class="badge text-bg-success va_m">Done</span>
-                                        </td>
-                                        <td>
-                                            <i class="fa-solid fa-pencil border border-3 rounded p-1 m-1 tx_fra_icon va_m"></i>
-                                            <i class="fa-solid fa-trash border border-3 rounded p-1 m-1 tx_fra_icon va_m"></i>
-                                        </td>
-                                      </tr>
-                                      <!-- /row1 -->
+                                        <tr class="lh-lg text-center">
+                                            <td class="text-start">
+                                                <img src="./assets/img/class-avatar.jpg" width="30px" alt=""
+                                                    class="me-2">
+                                                <span class="va_m">Classe 75</span>
+                                            </td>
+                                            <td class=" d-none d-md-table-cell va_m">15 Feb 2021</td>
+                                            <td class=" d-none d-md-table-cell va_m">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success va_m">Done</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <button class="rounded m-1"><i
+                                                            class="fa-solid fa-pencil tx_fra_icon m-1"></i></button>
+                                                    <button class="rounded m-1"><i
+                                                            class="fa-solid fa-trash tx_fra_icon m-1"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- /row1 -->
 
-                                      <tr  class="lh-lg text-center">
-                                        <td class="text-start">
-                                            <img src="./assets/img/class-avatar.jpg" width="30px" alt="" class="me-2">
-                                            <span class="me-sm-5 va_m">Classe 76</span>
-                                        </td>
-                                        <td class=" d-none d-md-table-cell va_m">16 Feb 2021</td>
-                                        <td class=" d-none d-md-table-cell va_m">20%</td>
-                                        <td>
-                                            <span class="badge text-bg-success va_m">Done</span>
-                                        </td>
-                                        <td>
-                                            <i class="fa-solid fa-pencil border border-3 rounded p-1 m-1 tx_fra_icon va_m"></i>
-                                            <i class="fa-solid fa-trash border border-3 rounded p-1 m-1 tx_fra_icon va_m"></i>
-                                        </td>
-                                      </tr>
-                                      <!-- /row2 -->
+                                        <tr class="lh-lg text-center">
+                                            <td class="text-start">
+                                                <img src="./assets/img/class-avatar.jpg" width="30px" alt=""
+                                                    class="me-2">
+                                                <span class=" va_m">Classe 76</span>
+                                            </td>
+                                            <td class=" d-none d-md-table-cell va_m">16 Feb 2021</td>
+                                            <td class=" d-none d-md-table-cell va_m">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success va_m">Done</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <button class="rounded m-1"><i
+                                                            class="fa-solid fa-pencil tx_fra_icon m-1"></i></button>
+                                                    <button class="rounded m-1"><i
+                                                            class="fa-solid fa-trash tx_fra_icon m-1"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- /row2 -->
 
-                                      <tr class="lh-lg text-center">
-                                        <td class="text-start">
-                                            <img src="./assets/img/class-avatar.jpg" width="30px" alt="" class="me-2">
-                                            <span class="me-sm-5 va_m">Classe 77</span>
-                                        </td>
-                                        <td class=" d-none d-md-table-cell va_m">17 Feb 2021</td>
-                                        <td class=" d-none d-md-table-cell va_m">20%</td>
-                                        <td>
-                                            <span class="badge text-bg-warning text-white va_m">Process</span>
-                                        </td>
-                                        <td>
-                                            <i class="fa-solid fa-pencil border border-3 rounded p-1 m-1 tx_fra_icon va_m"></i>
-                                            <i class="fa-solid fa-trash border border-3 rounded p-1 m-1 tx_fra_icon va_m"></i>
-                                        </td>
-                                      </tr>
-                                      <!-- /row3 -->
+                                        <tr class="lh-lg text-center">
+                                            <td class="text-start">
+                                                <img src="./assets/img/class-avatar.jpg" width="30px" alt=""
+                                                    class="me-2">
+                                                <span class=" va_m">Classe 77</span>
+                                            </td>
+                                            <td class=" d-none d-md-table-cell va_m">17 Feb 2021</td>
+                                            <td class=" d-none d-md-table-cell va_m">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-warning text-white va_m">Process</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <button class="rounded m-1"><i
+                                                            class="fa-solid fa-pencil tx_fra_icon m-1"></i></button>
+                                                    <button class="rounded m-1"><i
+                                                            class="fa-solid fa-trash tx_fra_icon m-1"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- /row3 -->
 
-                                      <tr class="lh-lg text-center">
-                                        <td class="text-start">
-                                            <img src="./assets/img/class-avatar.jpg" width="30px" alt="" class="me-2">
-                                            <span class="me-sm-5 va_m">Classe 78</span>
-                                        </td>
-                                        <td class=" d-none d-md-table-cell va_m">18 Feb 2021</td>
-                                        <td class=" d-none d-md-table-cell va_m">20%</td>
-                                        <td>
-                                            <span class="badge text-bg-success va_m">Done</span>
-                                        </td>
-                                        <td>
-                                            <i class="fa-solid fa-pencil border border-3 rounded p-1 m-1 tx_fra_icon va_m"></i>
-                                            <i class="fa-solid fa-trash border border-3 rounded p-1 m-1 tx_fra_icon va_m"></i>
-                                        </td>
-                                      </tr>
-                                      <!-- /row4 -->
+                                        <tr class="lh-lg text-center">
+                                            <td class="text-start">
+                                                <img src="./assets/img/class-avatar.jpg" width="30px" alt=""
+                                                    class="me-2">
+                                                <span class=" va_m">Classe 78</span>
+                                            </td>
+                                            <td class=" d-none d-md-table-cell va_m">18 Feb 2021</td>
+                                            <td class=" d-none d-md-table-cell va_m">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success va_m">Done</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <button class="rounded m-1"><i
+                                                            class="fa-solid fa-pencil tx_fra_icon m-1"></i></button>
+                                                    <button class="rounded m-1"><i
+                                                            class="fa-solid fa-trash tx_fra_icon m-1"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- /row4 -->
 
-                                      <tr class="lh-lg text-center">
-                                        <td class="text-start">
-                                            <img src="./assets/img/class-avatar.jpg" width="30px" alt="" class="me-2">
-                                            <span class="me-sm-5 va_m">Classe 79</span>
-                                        </td>
-                                        <td class=" d-none d-md-table-cell va_m">19 Feb 2021</td>
-                                        <td class=" d-none d-md-table-cell va_m">20%</td>
-                                        <td>
-                                            <span class="badge text-bg-danger va_m">Failed</span>
-                                        </td>
-                                        <td>
-                                            <i class="fa-solid fa-pencil border border-3 rounded p-1 m-1 tx_fra_icon va_m"></i>
-                                            <i class="fa-solid fa-trash border border-3 rounded p-1 m-1 tx_fra_icon va_m"></i>
-                                        </td>
-                                      </tr>
-                                      <!-- /row5 -->
+                                        <tr class="lh-lg text-center">
+                                            <td class="text-start">
+                                                <img src="./assets/img/class-avatar.jpg" width="30px" alt=""
+                                                    class="me-2">
+                                                <span class=" va_m">Classe 79</span>
+                                            </td>
+                                            <td class=" d-none d-md-table-cell va_m">19 Feb 2021</td>
+                                            <td class=" d-none d-md-table-cell va_m">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-danger va_m">Failed</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <button class="rounded m-1"><i
+                                                            class="fa-solid fa-pencil tx_fra_icon m-1"></i></button>
+                                                    <button class="rounded m-1"><i
+                                                            class="fa-solid fa-trash tx_fra_icon m-1"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- /row5 -->
 
-                                      <tr class="lh-lg text-center">
-                                        <td class="text-start">
-                                            <img src="./assets/img/class-avatar.jpg" width="30px" alt="" class="me-2">
-                                            <span class="me-sm-5 va_m">Classe 80</span>
-                                        </td>
-                                        <td class=" d-none d-md-table-cell va_m">20 Feb 2021</td>
-                                        <td class=" d-none d-md-table-cell va_m">20%</td>
-                                        <td>
-                                            <span class="badge text-bg-success va_m">Done</span>
-                                        </td>
-                                        <td>
-                                            <i class="fa-solid fa-pencil border border-3 rounded p-1 m-1 tx_fra_icon va_m"></i>
-                                            <i class="fa-solid fa-trash border border-3 rounded p-1 m-1 tx_fra_icon va_m"></i>
-                                        </td>
-                                      </tr>
-                                      <!-- /row6 -->
+                                        <tr class="lh-lg text-center">
+                                            <td class="text-start">
+                                                <img src="./assets/img/class-avatar.jpg" width="30px" alt=""
+                                                    class="me-2">
+                                                <span class=" va_m">Classe 80</span>
+                                            </td>
+                                            <td class=" d-none d-md-table-cell va_m">20 Feb 2021</td>
+                                            <td class=" d-none d-md-table-cell va_m">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success va_m">Done</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <button class="rounded m-1"><i
+                                                            class="fa-solid fa-pencil tx_fra_icon m-1"></i></button>
+                                                    <button class="rounded m-1"><i
+                                                            class="fa-solid fa-trash tx_fra_icon m-1"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- /row6 -->
 
-                                      <tr class="lh-lg text-center">
-                                        <td class="text-start">
-                                            <img src="./assets/img/class-avatar.jpg" width="30px" alt="" class="me-2">
-                                            <span class="me-sm-5 va_m">Classe 81</span>
-                                        </td>
-                                        <td class=" d-none d-md-table-cell va_m">21 Feb 2021</td>
-                                        <td class=" d-none d-md-table-cell va_m">20%</td>
-                                        <td>
-                                            <span class="badge text-bg-danger va_m">Failed</span>
-                                        </td>
-                                        <td>
-                                            <i class="fa-solid fa-pencil border border-3 rounded p-1 m-1 tx_fra_icon va_m"></i>
-                                            <i class="fa-solid fa-trash border border-3 rounded p-1 m-1 tx_fra_icon va_m"></i>
-                                        </td>
-                                      </tr>
-                                      <!-- /row7 -->
+                                        <tr class="lh-lg text-center">
+                                            <td class="text-start">
+                                                <img src="./assets/img/class-avatar.jpg" width="30px" alt=""
+                                                    class="me-2">
+                                                <span class=" va_m">Classe 81</span>
+                                            </td>
+                                            <td class=" d-none d-md-table-cell va_m">21 Feb 2021</td>
+                                            <td class=" d-none d-md-table-cell va_m">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-danger va_m">Failed</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <button class="rounded m-1"><i
+                                                            class="fa-solid fa-pencil tx_fra_icon m-1"></i></button>
+                                                    <button class="rounded m-1"><i
+                                                            class="fa-solid fa-trash tx_fra_icon m-1"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- /row7 -->
 
-                                      <tr class="lh-lg text-center">
-                                        <td class="text-start">
-                                            <img src="./assets/img/class-avatar.jpg" width="30px" alt="" class="me-2">
-                                            <span class="me-sm-5 va_m">Classe 91</span>
-                                        </td>
-                                        <td class=" d-none d-md-table-cell va_m">25 Feb 2021</td>
-                                        <td class=" d-none d-md-table-cell va_m">20%</td>
-                                        <td>
-                                            <span class="badge text-bg-success va_m">Done</span>
-                                        </td>
-                                        <td>
-                                            <i class="fa-solid fa-pencil border border-3 rounded p-1 m-1 tx_fra_icon va_m"></i>
-                                            <i class="fa-solid fa-trash border border-3 rounded p-1 m-1 tx_fra_icon va_m"></i>
-                                        </td>
-                                      </tr>
-                                      <!-- /row8 -->
+                                        <tr class="lh-lg text-center">
+                                            <td class="text-start">
+                                                <img src="./assets/img/class-avatar.jpg" width="30px" alt=""
+                                                    class="me-2">
+                                                <span class=" va_m">Classe 91</span>
+                                            </td>
+                                            <td class=" d-none d-md-table-cell va_m">25 Feb 2021</td>
+                                            <td class=" d-none d-md-table-cell va_m">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success va_m">Done</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <button class="rounded m-1"><i
+                                                            class="fa-solid fa-pencil tx_fra_icon m-1"></i></button>
+                                                    <button class="rounded m-1"><i
+                                                            class="fa-solid fa-trash tx_fra_icon m-1"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- /row8 -->
 
                                     </tbody>
                                     <!-- /row table -->
 
-                                  </table>
-                                  <!-- /table -->
+                                </table>
+                                <!-- /table -->
 
                             </div>
-                          </div>
+                        </div>
+                        <!-- /card prossime classi -->
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="text-uppercase">f.a.q.</h2>
+                            </div>
+                            <!-- /card title -->
+
+                            <div class="card-body">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed fs_fra_1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                          Come aggiungere un nuovo studente?
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body fs_fra_1">Clicca sul + in alto nella sezione blu. <code></code></div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed fs_fra_1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                          Come posso accedere alle informazioni del mio account?
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body fs_fra_1">Clicca sull'icona della campanella. <code></code></div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed fs_fra_1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Posso usare questa dashboard da mobile?
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body fs_fra_1">Certo questa dashboard la puoi portare dove vuoi. <code></code></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <!-- /cardb body -->
+                        </div>
+                        <!-- /card F.A.Q. -->
+
                     </div>
                     <!-- /col1 -->
 
-                    <div class="col-12 col-lg-4 py-5"></div>
+                    <div class="col-12 col-lg-4 py-5">
+                        
+                    </div>
                     <!-- /col2 -->
 
                 </div>
@@ -408,6 +503,7 @@
             <!-- /data -->
 
         </main>
+        <!-- /main -->
     </div>
     <!-- /wrapper -->
 
