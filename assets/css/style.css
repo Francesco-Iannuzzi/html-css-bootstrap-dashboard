@@ -125,16 +125,6 @@
 
 /* #endregion utilities */
 
-/* #region debug */
-
-.data [class^=col-]
-{
-    border: 1px dashed red;
-    background-color: yellow;
-}
-/* #endregion debug */
-
-
 /* #region app_header */
 
 #app_header
