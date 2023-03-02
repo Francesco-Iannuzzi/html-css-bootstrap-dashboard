@@ -169,7 +169,17 @@
     height: 100%;
 }
 
-/* #region content */
+.offcanvas .save:hover
+{
+    background-color: var(--fra-primary);
+}
+
+.offcanvas .reset:hover
+{
+    background-color: var(--fra-bell);
+}
+
+/* #endregion content */
 
 /* #endregion wrapper */
 

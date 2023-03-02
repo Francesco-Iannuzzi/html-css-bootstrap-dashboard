@@ -20,12 +20,14 @@
         <nav class="navbar bg_fra_back">
             <div class="container-fluid">
 
-                <a class="navbar-brand">
-                    <img src="./assets/img/mobile-logo.png" class="d-lg-none" width="30px" alt="">
-                </a>
-                <a class="navbar-brand">
-                    <img src="./assets/img/logo.svg" class="img -fluid d-none d-lg-block" alt="">
-                </a>
+                <div class="d-flex flex-grow-0">
+                    <a class="navbar-brand">
+                        <img src="./assets/img/mobile-logo.png" class="d-lg-none" width="30px" alt="">
+                    </a>
+                    <a class="navbar-brand">
+                        <img src="./assets/img/logo.svg" class="img -fluid d-none d-lg-block" alt="">
+                    </a>
+                </div>
                 <!-- /logo -->
 
                 <form class="d-flex flex-grow-1" role="search">
@@ -39,7 +41,7 @@
                 </form>
                 <!-- /search navbar -->
 
-                <div class="icon_nav d-flex gap-3">
+                <div class="icon_nav d-flex flex-grow-0 gap-3">
                     <a href="#" class="text-decoration-none tx_fra_icon">
                         <i class="fa-solid fa-bars d-none d-lg-block"></i>
                     </a>
@@ -73,14 +75,14 @@
     <!-- /app_header -->
 
     <div class="wrapper d-flex">
-        <div class="sidebar bg_fra_side d-flex flex-column justify-content-between text-center">
+        <div class="sidebar bg_fra_side d-flex flex-column justify-content-between">
             <div class="side_top mt-4">
 
                 <div class="icon_side m-2">
                     <a class="text-decoration-none text-white" href="#">
-                        <div class="d-flex justify-content-around">
-                            <i class="fa-solid fa-house me-lg-2 align-self-center"></i>
-                            <span class="d-none d-lg-inline">Home</span>
+                        <div class="py-2">
+                            <i class="fa-solid fa-house me-2"></i>
+                            <span class="d-none d-lg-inline-block">Home</span>
                         </div>
                     </a>
                 </div>
@@ -88,9 +90,9 @@
 
                 <div class="icon_side m-2">
                     <a class="text-decoration-none text-white" href="#">
-                        <div class="d-flex justify-content-around">
-                            <i class="fa-solid fa-chart-simple me-lg-2 align-self-center"></i>
-                            <span class="d-none d-lg-inline">Stats</span>
+                        <div class="py-2">
+                            <i class="fa-solid fa-chart-simple me-2"></i>
+                            <span class="d-none d-lg-inline-block">Stats</span>
                         </div>
                     </a>
                 </div>
@@ -98,9 +100,9 @@
 
                 <div class="icon_side m-2">
                     <a class="text-decoration-none text-white" href="#">
-                        <div class="d-flex justify-content-around">
-                            <i class="fa-solid fa-signal me-lg-2 align-self-center"></i>
-                            <span class="d-none d-lg-inline">Signals</span>
+                        <div class="py-2">
+                            <i class="fa-solid fa-signal me-2"></i>
+                            <span class="d-none d-lg-inline-block">Signals</span>
                         </div>
                     </a>
                 </div>
@@ -110,7 +112,7 @@
             <!-- /side_top -->
 
             <div class="side_bottom mb-3">
-                <div class="icon_side lh-lg">
+                <div class="icon_side text-center">
                     <a class="text-decoration-none text-white p-2" href="#">
                         <i class="fa-solid fa-gear me-lg-2"></i>
                         <span class="d-none d-lg-inline-block">Admin</span>
@@ -202,8 +204,8 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit" class="btn bg_fra_primary text-white">Salva</button>
-                                        <button type="reset" class="btn bg_fra_bell text-white">Svuota</button>
+                                        <button type="submit" class="save btn bg_fra_primary text-white">Salva</button>
+                                        <button type="reset" class="reset btn bg_fra_bell text-white">Svuota</button>
                                     </div>
                                 </form>
                             </div>
