@@ -154,6 +154,11 @@
     height: 100%;
 }
 
+.icon_side:hover
+{
+    background-color: #9292926e;
+}
+
 /* #endregion sidebar */
 
 /* #region content */
